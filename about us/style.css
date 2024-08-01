@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    background-color: #FFEDEE;
+}
+
+nav {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul{
+    display: flex; 
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D5345C;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #D5345C;
+    color: rgb(255, 255, 255); 
+}
+
+.products-link {
+    position: relative;
+}
+
+.aboutus-link::after {
+    content: '▼';
+    font-size: 15px;
+    color: #E36A89;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0px 0px 12px #000000);
+
+}
+
+.aboutus-link:hover::after {
+    color: #D5345C;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-color: #D5345C;
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.3s;
+}
+
+.content .button {
+    padding: 15px 80px;
+    font-size: 15px;
+    animation-delay: 1s;
+}
+
+.button:hover {
+    border-top-right-radius: 30px;
+}
+
+
+@media (max-width: 1024px) {
+    .content h1 {
+        font-size: 60px;
+    }
+    .feature-img {
+        width: 400px;
+        right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .logo {
+        width: 126px;
+    }
+    nav ul {
+        padding: 30px 0;
+    }
+    .content .button {
+        padding: 15px 60px;
+    }
+    .hero {
+        padding: 20px;
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 480px) {
+    .content .button {
+        padding: 15px 40px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+}
