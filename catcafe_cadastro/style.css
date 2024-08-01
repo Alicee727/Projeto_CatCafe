@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(249, 233, 210);
+}
+
+header {
+    background-color: rgb(170, 56, 56);
+    color: rgb(249, 233, 210);
+    padding: 15px;
+    text-align: center;
+}
+
+form h2{
+    background-color: rgb(170, 56, 56);
+    color: rgb(249, 233, 210);
+}
+
+label {
+    color: rgb(170, 56, 56);
+}
+
+button {
+    background-color: rgb(189,111,111);
+    border-color: rgb(189, 111, 111);
+    border-radius: 20px;
+}
+
+div {
+    float:left;
+    color: #000000;
+}
+
+div h2{
+    background-color: rgb(170, 56, 56);
+    color: rgb(249, 233, 210);
+    text-align: center;
+}
+
+ul {
+    color: rgb(170, 56, 56);
+}

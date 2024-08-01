@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Produtos</h1>
+    </header><br>
+    <form id="formProduto">
+        <h2>Formulário de Cadastros</h2>
+        <label for="idinput">Produto:</label>
+        <select id="idinput">
+        </select><br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required><br><br>
+        <label for="preco">Preço:</label>
+        <input type="number" min="0" step=".5" id="preco" required><br><br>
+        <label for="quantidade">Quantidade por porção:</label>
+        <input type="number" min="1" id="quantidade" required><br><br>
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" required><br><br>
+        <label for="ingredientes">Ingredientes:</label>
+        <input type="text" id="ingredientes" required><br><br>
+        <label for="avisos">Avisos:</label>
+        <input type="text" id="avisos"><br><br>
+        <button type="submit">Adicionar Produto</button>
+    </form>
+    <div id="listaProdutos">
+        <h2>Produtos Cadastrados</h2>
+        <ul id="produtos"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
